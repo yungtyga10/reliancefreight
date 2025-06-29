@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliance Freightworks - Premium Logistics Solutions | 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+        }
+        
+        .review-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .tracking-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #3b82f6;
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-primary">Reliance</span>
+                        <span class="text-2xl font-bold text-dark">Freightworks</span>
+                    </a>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#services" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#solutions" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Solutions</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#reviews" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Reviews</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="#" class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Get a Quote</a>
+                    <button class="md:hidden ml-4 inline-flex items-center justify-center p-2 rounded-md text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">Logistics Solutions <span class="block">Built for 2025</span></h1>
+                    <p class="text-lg md:text-xl mb-8 opacity-90">Reliable, efficient, and technology-driven freight services tailored to your business needs.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-md font-medium text-center transition duration-300">Track Shipment</a>
+                        <a href="#" class="border-2 border-white text-white hover:bg-white hover:text-primary px-6 py-3 rounded-md font-medium text-center transition duration-300">Get Started</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1604268990437-3415d4a54ae5?ixlib=rb-4.0.3&ixid=LNgzhtPkHLjEv4Nt8AvZ6yZc5mu8bCCuk9%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Freight truck on highway" class="rounded-xl shadow-2xl w-full h-auto">
+                    <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg hidden md:block">
+                        <div class="flex items-center">
+                            <div class="bg-primary p-3 rounded-lg mr-4">
+                                <i class="fas fa-truck text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">On-time delivery</p>
+                                <p class="font-bold text-dark">98.7%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section class="bg-white -mt-10 relative z-10 max-w-5xl mx-auto rounded-xl shadow-xl p-6">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <h3 class="text-xl font-semibold text-dark">Track Your Shipment</h3>
+            <div class="flex-grow max-w-xl">
+                <div class="relative">
+                    <input type="text" placeholder="Enter tracking number" class="tracking-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary">
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 rounded-md">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <button class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-md font-medium whitespace-nowrap transition duration-300">
+                <i class="fas fa-qrcode mr-2"></i> Scan QR Code
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive logistics solutions designed to streamline your supply chain and reduce operational costs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-truck-fast text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Expedited Shipping</h3>
+                    <p class="text-gray-600 mb-4">Time-sensitive deliveries with real-time tracking and guaranteed on-time performance.</p>
+                    <a href="#" class="text-primary font-medium inline-flex items-center">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-warehouse text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Warehousing</h3>
+                    <p class="text-gray-600 mb-4">Secure storage solutions with inventory management and just-in-time distribution.</p>
+                    <a href="#" class="text-primary font-medium inline-flex items-center">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-globe-americas text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">International Logistics</h3>
+                    <p class="text-gray-600 mb-4">Seamless cross-border shipping with customs clearance and compliance expertise.</p>
+                    <a href="#" class="text-primary font-medium inline-flex items-center">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Technology-Driven <span class="text-primary">Logistics Solutions</span></h2>
+                    <p class="text-gray-600 mb-8">Our proprietary logistics platform combines AI-powered route optimization, real-time tracking, and predictive analytics to deliver unmatched efficiency and visibility across your supply chain.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded-full">
+                                    <i class="fas fa-route text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-dark">Smart Routing</h4>
+                                <p class="text-gray-600">Dynamic routing algorithms that adapt to traffic, weather, and delivery windows.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded-full">
+                                    <i class="fas fa-chart-line text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-dark">Performance Analytics</h4>
+                                <p class="text-gray-600">Comprehensive dashboards with KPIs and actionable insights for continuous improvement.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded-full">
+                                    <i class="fas fa-shield-alt text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-dark">Secure Operations</h4>
+                                <p class="text-gray-600">Blockchain-based documentation and tamper-proof tracking for sensitive shipments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=LNgzhtPkHLjEv4Nt8AvZ6yZc5mu8bCCuk9%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Logistics dashboard" class="rounded-xl shadow-lg w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-primary text-white p-4 rounded-xl shadow-lg hidden lg:block">
+                        <div class="flex items-center">
+                            <div class="mr-4">
+                                <p class="text-sm opacity-80">Average cost reduction</p>
+                                <p class="text-2xl font-bold">22%</p>
+                            </div>
+                            <i class="fas fa-chart-pie text-3xl opacity-70"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <p class="text-4xl font-bold mb-2">15+</p>
+                    <p class="text-sm opacity-90">Years Experience</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-4xl font-bold mb-2">98.7%</p>
+                    <p class="text-sm opacity-90">On-time Delivery</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-4xl font-bold mb-2">500+</p>
+                    <p class="text-sm opacity-90">Satisfied Clients</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-4xl font-bold mb-2">24/7</p>
+                    <p class="text-sm opacity-90">Customer Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews -->
+    <section id="reviews" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">What Our Clients Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Trusted by businesses across industries for reliable logistics solutions.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="review-card bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">Operations Manager, TechCorp</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600">"Reliance Freightworks transformed our supply chain. Their real-time tracking and predictive analytics helped us reduce delivery times by 30% while cutting costs."</p>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold">Michael Chen</h4>
+                            <p class="text-gray-500 text-sm">Director of Logistics, RetailPlus</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600">"The team at Reliance Freightworks goes above and beyond. Their warehouse management system integrated seamlessly with our ERP, giving us complete inventory visibility."</p>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Rodriguez">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold">Emily Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Supply Chain VP, PharmaSolutions</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600">"For our temperature-sensitive pharmaceutical shipments, Reliance Freightworks provides the reliability and compliance documentation we need. Their cold chain solutions are exceptional."</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-flex items-center text-primary font-medium">
+                    Read more reviews <i class="fas fa-chevron-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Optimize Your Logistics?</h2>
+            <p class="text-xl opacity-90 mb-8">Join hundreds of businesses that trust Reliance Freightworks for their shipping and supply chain needs.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-md font-medium text-lg transition duration-300">Get a Free Quote</a>
+                <a href="#" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-md font-medium text-lg transition duration-300">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">About <span class="text-primary">Reliance Freightworks</span></h2>
+                    <p class="text-gray-600 mb-6">Founded in 2010, Reliance Freightworks has grown from a regional carrier to a nationally recognized logistics provider through our commitment to innovation, reliability, and customer service.</p>
+                    <p class="text-gray-600 mb-8">Our Oklahoma City headquarters serves as the hub for our technology development and operations center, where we continuously refine our processes to deliver exceptional value to our clients.</p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-gray-50 px-4 py-3 rounded-lg">
+                            <p class="font-semibold text-dark">15+ Years</p>
+                            <p class="text-sm text-gray-600">Industry Experience</p>
+                        </div>
+                        <div class="bg-gray-50 px-4 py-3 rounded-lg">
+                            <p class="font-semibold text-dark">100+</p>
+                            <p class="text-sm text-gray-600">Dedicated Team</p>
+                        </div>
+                        <div class="bg-gray-50 px-4 py-3 rounded-lg">
+                            <p class="font-semibold text-dark">ISO 9001</p>
+                            <p class="text-sm text-gray-600">Certified</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1609976602971-6b622910a0c3?ixlib=rb-4.0.3&ixid=LNgzhtPkHLjEv4Nt8AvZ6yZc5mu8bCCuk9%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Reliance Freightworks warehouse" class="rounded-xl shadow-lg w-full">
+                        <div class="absolute -bottom-6 -right-6 bg-dark text-white p-6 rounded-xl shadow-lg hidden lg:block">
+                            <div class="flex items-center">
+                                <div class="mr-4">
+                                    <p class="text-sm opacity-80">Our headquarters</p>
+                                    <p class="text-lg font-bold">Oklahoma City</p>
+                                </div>
+                                <i class="fas fa-map-marker-alt text-2xl opacity-70"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Contact Us</h2>
+                    <p class="text-gray-600 mb-8">Have questions about our services or need a custom logistics solution? Our team is ready to help.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-lg">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-dark">Headquarters</h4>
+                                <p class="text-gray-600">8825 N I-35 Service Rd<br>Oklahoma City, OK 73131</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-lg">
+                                <i class="fas fa-phone-alt text-primary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-dark">Phone</h4>
+                                <p class="text-gray-600">(539) 281-9140</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-lg">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-dark">Email</h4>
+                                <p class="text-gray-600">rel.freightw@reliancefreightworks.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-lg">
+                                <i class="fas fa-globe text-primary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-dark">Website</h4>
+                                <p class="text-gray-600">reliancefreightworks.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-semibold text-dark mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                            </div>
+                            <div class="mt-6">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary"></textarea>
+                            </div>
+                            <div class="mt-8">
+                                <button type="submit" class="w-full bg-primary hover:bg-secondary text-white px-6 py-3 rounded-md font-medium transition duration-300">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Reliance Freightworks</h3>
+                    <p class="text-gray-400 mb-4">Premium logistics solutions for businesses of all sizes.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Expedited Shipping</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Warehousing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">International Logistics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Supply Chain Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Customs Clearance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">News & Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Partners</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Shipping Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Reliance Freightworks. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Sitemap</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                const expanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !expanded);
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Tracking form submission
+            const trackingForm = document.querySelector('form');
+            if (trackingForm) {
+                trackingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const trackingNumber = document.querySelector('.tracking-input').value;
+                    if (trackingNumber) {
+                        alert(`Tracking number ${trackingNumber} submitted. This would normally redirect to tracking details.`);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
